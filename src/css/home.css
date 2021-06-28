@@ -1,4 +1,28 @@
 
 #home-body {
-    margin-top: 10px;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+ 
+.data-block {
+    display: block;
+    padding: 250px;
+    color: black;
+    font-size: 55px;
+    font-weight: 800px;
+}
+
+.total-confirmed {
+    background-color: rgb(255, 208, 53);
+}
+
+.total-recovered {
+    background-color: green;
+}
+
+.total-deaths {
+    background-color: red;
 }
