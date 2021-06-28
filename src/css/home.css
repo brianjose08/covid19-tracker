@@ -1,21 +1,22 @@
 
-#home-body {
+.data-block {
+    width: 100%;
+    padding: 250px 50px;
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0;
 }
 
-ul {
-    padding-left: 0px;
-    margin-bottom: 0px;
-}
- 
-.data-block {
-    display: block;
-    padding: 250px;
-    color: black;
-    font-size: 55px;
-    font-weight: 800px;
+.image-header-right {
+    width: 75%;
 }
 
 .total-confirmed {
+    background-color: rgb(0, 0, 0);
+}
+
+.total-active {
     background-color: rgb(255, 208, 53);
 }
 
