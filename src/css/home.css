@@ -1,15 +1,29 @@
 
+/* GENERAL */
+
+img, svg {
+    vertical-align: top !important;
+}
+
 .data-block {
-    width: 100%;
-    padding: 250px 50px;
+    padding: 50px 50px;
     color: white;
-    font-size: 45px;
+    font-size: 65px;
     font-weight: 600;
     margin: 0;
 }
 
-.image-header-right {
-    width: 75%;
+.text-right {
+    text-align: right;
+}
+
+.col-image {
+    text-align: center;
+}
+
+
+.col-image img {
+    width: 100%;
 }
 
 .total-confirmed {
@@ -17,13 +31,29 @@
 }
 
 .total-active {
-    background-color: rgb(255, 208, 53);
+    background-color: rgb(255, 207, 50);
 }
 
 .total-recovered {
-    background-color: green;
+    background-color: rgb(0, 224, 138);
 }
 
 .total-deaths {
-    background-color: red;
+    background-color: rgb(233, 0, 78);
 }
+
+
+@media screen and (max-width: 1240px) {
+    .data-block {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    
+    .col-text {
+        text-align: center;
+    }
+
+    .col-image img {
+        width: 70%;
+    }
+  }
