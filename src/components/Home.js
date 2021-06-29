@@ -65,7 +65,7 @@ class Home extends React.Component {
                             </div>
                             <div className="col-lg-12 my-auto col-text">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} confirmed cases around the world.
+                                    This is a side project made to collect and display daily information about COVID-19.
                                 </p>
                             </div>
                         </div>

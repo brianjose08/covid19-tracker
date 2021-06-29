@@ -18,6 +18,19 @@ html {
     color: rgb(255, 255, 255);
 }
 
+.fa-chevron-up {
+    color: rgb(29, 29, 29);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    font-size: 22px;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.fa-chevron-up:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 0, 78);
+}
 
 @media screen and (min-width: 600px) {
 

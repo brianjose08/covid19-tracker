@@ -5,7 +5,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -13,6 +13,12 @@ class Navbar extends React.Component {
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Summary</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Search a country</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="/about">About</a>

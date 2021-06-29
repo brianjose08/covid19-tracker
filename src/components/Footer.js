@@ -12,9 +12,11 @@ class Footer extends React.Component {
                         All rights reserved by Brian-José Mejia-Rivera 2021
                     </h6>
                     <h6>
-                    <i class="fas fa-envelope"></i> brianjose08@hotmail.com
+                        <i class="fas fa-envelope"></i> brianjose08@hotmail.com
                     </h6>
-                    <a href="#header">Light</a>
+                    <a href="#header">
+                        <i class="fas fa-chevron-up"></i>
+                    </a>
                 </div>
             </footer>
 
