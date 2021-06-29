@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+   }
+
 .footer {
     padding: 25px;
     color: #fff;
@@ -5,9 +9,10 @@
     text-align: center;
 }
 
-.footer img{
-    width: 50%;
+.footer h6{
+    margin-bottom: 25px;
 }
+
 
 .b-footer {
     color: rgb(255, 255, 255);

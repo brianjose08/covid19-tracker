@@ -1,6 +1,5 @@
 import React from "react";
 import '../css/footer.css';
-import logo_image from '../images/logo.png';
 
 class Footer extends React.Component {
 
@@ -15,6 +14,7 @@ class Footer extends React.Component {
                     <h6>
                     <i class="fas fa-envelope"></i> brianjose08@hotmail.com
                     </h6>
+                    <a href="#header">Light</a>
                 </div>
             </footer>
 
