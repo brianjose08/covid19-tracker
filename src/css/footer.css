@@ -1,0 +1,19 @@
+.footer {
+    padding: 25px;
+    color: #fff;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+}
+
+.footer img{
+    width: 50%;
+}
+
+.b-footer {
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (min-width: 600px) {
+
+}

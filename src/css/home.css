@@ -6,7 +6,7 @@ img, svg {
 }
 
 .data-block {
-    padding: 50px 50px;
+    padding: 120px 50px;
     color: white;
     font-size: 65px;
     font-weight: 600;
@@ -50,7 +50,7 @@ img, svg {
     }
     
     .col-text {
-        text-align: center;
+        text-align: center !important;
     }
 
     .col-image img {

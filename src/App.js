@@ -1,10 +1,14 @@
 
 import React from "react"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
-import 'bootstrap/dist/css/bootstrap.min.css';
+/*
+import $ from 'jquery'; 
+import 'bootstrap/dist/css/bootstrap.css';
+*/
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
 
@@ -16,6 +20,7 @@ class App extends React.Component {
                     <Route path="/" exact component={Home}></Route>
                     <Route path="/about" component={About}></Route>
                 </Switch>
+                <Footer/>
             </Router>
         )
     }
