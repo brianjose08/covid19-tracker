@@ -1,0 +1,18 @@
+/* LOADING CSS */
+#loading-animation {
+    text-align: center;
+    padding: 250px 0px 1000px 0px;
+}
+
+#loading-animation img{
+    width: 250px;
+}
+
+#summary-details {
+    padding: 100px;
+}
+
+.summary-detail {
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+}
