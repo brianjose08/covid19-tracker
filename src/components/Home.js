@@ -7,6 +7,7 @@ import mask_image from '../images/mask.png';
 import recover_image from '../images/recover.png';
 import skull_image from '../images/skull.png';
 import covid_image from '../images/covid.png';
+import test_image from '../images/test_tube.png';
 import loading_gif from '../images/loading2.svg';
 
 class Home extends React.Component {
@@ -83,21 +84,34 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="total-active">
+                    <div className="total-tested">
                         <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(0, 0, 0, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(0, 0, 0, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(0, 0, 0, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(0, 0, 0, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(0, 0, 0, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>
                         <div className="row home-sub-banner">
-                            <div className="col-lg-4 col-image">
-                                <img data-aos="fade-down" src={mask_image} className="image-header-right" alt="mask" />
+                            <div className="col-lg col-image">
+                                <img data-aos="fade-down" src={test_image} className="image-header-right" alt="test" />
                             </div>
-                            <div className="col-lg my-auto col-text text-right">
+                            <div className="col-lg-8 my-auto col-text-right">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.active_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} cases still active.
+                                    {this.state.world_data.summary.tested.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} tests have been performed.
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div className="total-active">
+                    <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(64, 92, 255, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(64, 92, 255, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(64, 92, 255, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(64, 92, 255, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(64, 92, 255, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>
+                        <div className="row home-sub-banner">
+                            <div className="col-lg my-auto col-text">
+                                <p data-aos="fade-up">
+                                    {this.state.world_data.summary.active_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} cases still active.
+                                </p>
+                            </div>
+                            <div className="col-lg-4 col-image">
+                                <img data-aos="fade-down" src={mask_image} className="image-header-right" alt="mask" />
+                            </div>
+                        </div>
+                    </div>
                     <div className="total-recovered">
-                        <svg viewBox="0 0 1475 99" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(255, 207, 50, 1)" d="M0 0c6 0-18 62-12 62V0H0z" /><path fill="rgba(255, 207, 50, 1)" d="M-13 62c201.5 0 201.5 21 403 21V0H-13z" /><path fill="rgba(255, 207, 50, 1)" d="M389 83c188 0 188-32 376-32V0H389z" /><path fill="rgba(255, 207, 50, 1)" d="M764 51c176.5 0 176.5 45 353 45V0H764z" /><path fill="rgba(255, 207, 50, 1)" d="M1116 96c180.5 0 180.5-33 361-33V0h-361z" /><path fill="rgba(47, 73, 94, 1)" d="M1476 63c.5 0-1.5-63-1-63h1z" /></svg>
+                    <svg viewBox="0 0 1475 99" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(255, 207, 50, 1)" d="M0 0c6 0-18 62-12 62V0H0z" /><path fill="rgba(255, 207, 50, 1)" d="M-13 62c201.5 0 201.5 21 403 21V0H-13z" /><path fill="rgba(255, 207, 50, 1)" d="M389 83c188 0 188-32 376-32V0H389z" /><path fill="rgba(255, 207, 50, 1)" d="M764 51c176.5 0 176.5 45 353 45V0H764z" /><path fill="rgba(255, 207, 50, 1)" d="M1116 96c180.5 0 180.5-33 361-33V0h-361z" /><path fill="rgba(47, 73, 94, 1)" d="M1476 63c.5 0-1.5-63-1-63h1z" /></svg>
                         <div className="row home-sub-banner">
                             <div className="col-lg-8 my-auto col-text">
                                 <p data-aos="fade-up">

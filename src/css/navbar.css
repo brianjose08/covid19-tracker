@@ -1,6 +1,11 @@
 nav {
     padding: 0px 10px; 
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 15%);
+}
+
+.navbar-toggler {
+    border: none !important;
 }
 
 nav a{

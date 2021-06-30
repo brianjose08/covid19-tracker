@@ -5,7 +5,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
