@@ -1,5 +1,6 @@
 import React from "react";
-import { data } from '../store/covid_api';
+import { data_summary } from '../store/covid_data';
+import { data_vaccine } from '../store/covid_data';
 import '../css/summary.css';
 import SummaryDetails from "./SummaryDetails";
 import loading_gif from '../images/loading2.svg';
@@ -7,17 +8,24 @@ import loading_gif from '../images/loading2.svg';
 class Summary extends React.Component {
 
     state = {
-        world_data: [],
-        world_total_cases: [],
+        data_summary: [],
+        data_vaccine: [],
         loading: true
     }
 
     async componentDidMount() {
 
-        data().then(data => {
+        data_summary().then(data => {
             this.setState({
-                world_data: data.data,
-                loading: false
+                data_summary: data,
+                loading: true
+            })
+        });
+
+        data_vaccine ().then(data => {
+            this.setState({
+                data_vaccine: data[0],
+                loading:false
             })
         });
 
@@ -38,7 +46,7 @@ class Summary extends React.Component {
         else {
             return (
                 <div id="summary-container" className="">
-                    <SummaryDetails data={this.state.world_data} />
+                    <SummaryDetails data_summary={this.state.data_summary} data_vaccine={this.state.data_vaccine} />
                 </div>
             );
         }

@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from '../store/covid_api';
+import { data_summary } from '../store/covid_data';
 import '../css/home.css';
 import globe_image from '../images/globe.png';
 import mask_image from '../images/mask.png';
@@ -12,16 +12,16 @@ import loading_gif from '../images/loading2.svg';
 class Home extends React.Component {
 
     state = {
-        world_data: [],
+        data_summary: [],
         world_total_cases: [],
         loading: true
     }
 
     async componentDidMount() {
 
-        data().then(data => {
+        data_summary().then(data => {
             this.setState({
-                world_data: data.data,
+                data_summary: data,
                 loading: false
             })
         });
@@ -60,7 +60,7 @@ class Home extends React.Component {
                         <div className="row home-sub-banner">
                             <div className="col-lg-8 my-auto col-text">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.total_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} confirmed cases around the world.
+                                    {this.state.data_summary.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} confirmed cases around the world.
                                 </p>
                             </div>
                             <div className="col-lg col-image">
@@ -76,7 +76,7 @@ class Home extends React.Component {
                             </div>
                             <div className="col-lg-8 my-auto col-text-right">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.tested.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} tests have been performed.
+                                    {this.state.data_summary.tests.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} tests have been performed.
                                 </p>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ class Home extends React.Component {
                         <div className="row home-sub-banner">
                             <div className="col-lg my-auto col-text">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.active_cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} cases still active.
+                                    {this.state.data_summary.active.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} cases still active.
                                 </p>
                             </div>
                             <div className="col-lg-4 col-image">
@@ -99,7 +99,7 @@ class Home extends React.Component {
                         <div className="row home-sub-banner">
                             <div className="col-lg-8 my-auto col-text">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} people have recovered.
+                                    {this.state.data_summary.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} people have recovered.
                                 </p>
                             </div>
                             <div className="col-lg col-image">
@@ -115,7 +115,7 @@ class Home extends React.Component {
                             </div>
                             <div className="col-lg my-auto col-text text-right">
                                 <p data-aos="fade-up">
-                                    {this.state.world_data.summary.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} people have died.
+                                    {this.state.data_summary.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} people have died.
                                 </p>
                             </div>
                         </div>

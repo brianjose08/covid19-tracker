@@ -8,11 +8,17 @@
     width: 250px;
 }
 
-#summary-details {
-    padding: 100px;
+#summary-container {
+    margin: 25px;
 }
 
-.summary-detail {
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+#summary-details {
+    padding: 100px 0px;
+}
+
+.summary-detail{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.8rem rgb(0 0 0 / 20%);
+    padding: 15px;
+    margin: 15px 0px;
 }
