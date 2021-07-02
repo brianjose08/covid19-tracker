@@ -22,3 +22,28 @@
     padding: 15px;
     margin: 15px 0px;
 }
+
+.summary-information p{
+    font-size: 20px;
+}
+
+.positive-change {
+    font-size: 15px;
+    font-weight: 600;
+    color: green;
+}
+
+.negative-change {
+    font-size: 15px;
+    font-weight: 600;
+    color: red;
+}
+
+
+.positive-extra {
+    color: green;
+}
+
+.negative-extra {
+    color: red;
+}
