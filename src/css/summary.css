@@ -9,16 +9,16 @@
 }
 
 #summary-container {
-    margin: 25px;
+    margin: 0px 50px;
 }
 
 #summary-details {
-    padding: 100px 0px;
+    padding: 100px 0px 25px 0px;
 }
 
 .summary-detail{
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.8rem rgb(0 0 0 / 20%);
+    box-shadow: 0 0 0.8rem rgb(0 0 0 / 10%);
     padding: 15px;
     margin: 15px 0px;
 }
@@ -46,4 +46,32 @@
 
 .negative-extra {
     color: red;
+}
+
+
+#summary-continents {
+    padding-bottom: 25px;
+}
+
+
+
+.div-table {
+    border-radius: 0.5rem;
+    height: 500px;
+    margin-bottom: 50px;
+    overflow-y: auto;
+    box-shadow: 0 0 0.8rem rgb(0 0 0 / 10%);
+}
+
+thead {
+    font-size: 15px;
+}
+
+tbody {
+    font-size: 14px;
+}
+
+tbody span {
+    font-size: 13px;
+    font-weight: 600;
 }

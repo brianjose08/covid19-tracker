@@ -1,19 +1,20 @@
 import React from "react";
 import { data_summary } from '../store/covid_data';
+import { data_vaccine } from '../store/covid_data';
 import '../css/home.css';
 import globe_image from '../images/globe.png';
 import mask_image from '../images/mask.png';
 import recover_image from '../images/recover.png';
 import skull_image from '../images/skull.png';
 import covid_image from '../images/covid.png';
-import test_image from '../images/test_tube.png';
+import syringe_image from '../images/syringe.png';
 import loading_gif from '../images/loading2.svg';
 
 class Home extends React.Component {
 
     state = {
         data_summary: [],
-        world_total_cases: [],
+        data_vaccine: [],
         loading: true
     }
 
@@ -22,10 +23,16 @@ class Home extends React.Component {
         data_summary().then(data => {
             this.setState({
                 data_summary: data,
-                loading: false
+                loading: true
             })
         });
 
+        data_vaccine ().then(data => {
+            this.setState({
+                data_vaccine: data,
+                loading:false
+            })
+        });
     }
 
     render() {
@@ -68,29 +75,15 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="total-tested">
-                        <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(0, 0, 0, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(0, 0, 0, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(0, 0, 0, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(0, 0, 0, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(0, 0, 0, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>
-                        <div className="row home-sub-banner">
-                            <div className="col-lg col-image">
-                                <img data-aos="fade-down" src={test_image} className="image-header-right" alt="test" />
-                            </div>
-                            <div className="col-lg-8 my-auto col-text-right">
-                                <p data-aos="fade-up">
-                                    {this.state.data_summary.tests.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} tests have been performed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div className="total-active">
-                        <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(64, 92, 255, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(64, 92, 255, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(64, 92, 255, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(64, 92, 255, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(64, 92, 255, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>
-                        <div className="row home-sub-banner">
-                            <div className="col-lg my-auto col-text">
+                    <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(0, 0, 0, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(0, 0, 0, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(0, 0, 0, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(0, 0, 0, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(0, 0, 0, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>                        <div className="row home-sub-banner">
+                            <div className="col-lg col-image">
+                                <img data-aos="fade-down" src={mask_image} className="image-header-right" alt="mask" />
+                            </div>
+                            <div className="col-lg-8 my-auto col-text text-right">
                                 <p data-aos="fade-up">
                                     {this.state.data_summary.active.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} cases still active.
                                 </p>
-                            </div>
-                            <div className="col-lg-4 col-image">
-                                <img data-aos="fade-down" src={mask_image} className="image-header-right" alt="mask" />
                             </div>
                         </div>
                     </div>
@@ -117,6 +110,19 @@ class Home extends React.Component {
                                 <p data-aos="fade-up">
                                     {this.state.data_summary.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} people have died.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="total-vaccinated">
+                        <svg viewBox="0 0 1812 100" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(233, 0, 78, 1)" d="M0 0c5.5 0-16.5 11-11 11V0H0z" /><path fill="rgba(233, 0, 78, 1)" d="M-12 11c254.5 0 254.5 69 509 69V0H-12z" /><path fill="rgba(233, 0, 78, 1)" d="M496 80c257 0 257-43 514-43V0H496z" /><path fill="rgba(233, 0, 78, 1)" d="M1009 37c219.5 0 219.5 24 439 24V0h-439z" /><path fill="rgba(233, 0, 78, 1)" d="M1447 61c182.5 0 182.5-61 365-61h-365z" /></svg>
+                        <div className="row home-sub-banner">
+                            <div className="col-lg my-auto col-text">
+                                <p data-aos="fade-up">
+                                    {this.state.data_vaccine[1].total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} vaccines have been administered.
+                                </p>
+                            </div>
+                            <div className="col-lg-4 col-image">
+                                <img data-aos="fade-down" src={syringe_image} className="image-header-right" alt="test" />
                             </div>
                         </div>
                     </div>
