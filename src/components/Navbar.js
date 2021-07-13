@@ -18,10 +18,7 @@ class Navbar extends React.Component {
                             <a class="nav-link" href="/summary">Summary</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/">Search a country</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/about">About</a>
+                            <a class="nav-link" href="/">Search</a>
                         </li>
                     </ul>
                 </div>

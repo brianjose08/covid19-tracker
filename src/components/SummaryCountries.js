@@ -11,9 +11,9 @@ const SummaryCountries = ({ data_countries }) => {
     ))
 
     return (
-        <div>
+        <div data-aos="fade-up">
             <div>
-                <h1>Countries</h1>
+                <h1><i class="fas fa-circle fa-xs"></i> Countries</h1>
             </div>
             <div className="div-table">
                 <table className="table">

@@ -9,7 +9,6 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
 import Footer from "./components/Footer";
 import Summary from "./components/Summary";
 
@@ -29,7 +28,6 @@ class App extends React.Component {
                 <Navbar />
                 <Switch>
                     <Route path="/" exact component={Home}></Route>
-                    <Route path="/about" component={About}></Route>
                     <Route path="/summary" component={Summary}></Route>
                 </Switch>
                 <Footer />

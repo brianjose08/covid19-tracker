@@ -78,11 +78,17 @@ class Summary extends React.Component {
         }
         else {
             return (
-                <div id="summary-container" className="">
-                    <SummaryDetails data_summary={this.state.data_summary} data_summary_yesterday={this.state.data_summary_yesterday} data_vaccine={this.state.data_vaccine} />
-                    <SummaryContinents data_continents={this.state.data_continents} data_continents_yesterday={this.state.data_continents_yesterday} />
-                    <SummaryCountries data_countries={this.state.data_countries} />
-                    
+                <div id="summary-container" className="header">
+                    <div className="page-title">
+                        <h1 data-aos="fade-up">Global Summary</h1>
+                        <h4 data-aos="fade-up">Countries affected: {this.state.data_summary.affectedCountries}</h4>
+                    </div>
+                    <div>
+                        <SummaryDetails data_summary={this.state.data_summary} data_summary_yesterday={this.state.data_summary_yesterday} data_vaccine={this.state.data_vaccine} />
+                        <SummaryContinents data_continents={this.state.data_continents} data_continents_yesterday={this.state.data_continents_yesterday} />
+                        <SummaryCountries data_countries={this.state.data_countries} />
+                    </div>
+
                 </div>
             );
         }

@@ -9,11 +9,27 @@
 }
 
 #summary-container {
+    padding: 100px 0px 0px 0px;
     margin: 0px 50px;
 }
 
+.page-title {
+    text-align: center;
+}
+
+.page-title h1{
+    font-weight: 800;
+    font-size: 65px;
+    margin: 0px 0px 20px 0px;
+}
+
+.page-title h4{
+    color: red;
+    margin: 0px 0px 50px 0px;
+}
+
 #summary-details {
-    padding: 100px 0px 25px 0px;
+    padding: 0px 0px 50px 0px;
 }
 
 .summary-detail{
@@ -50,7 +66,7 @@
 
 
 #summary-continents {
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 
@@ -69,6 +85,12 @@ thead {
 
 tbody {
     font-size: 14px;
+}
+
+tbody img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 tbody span {

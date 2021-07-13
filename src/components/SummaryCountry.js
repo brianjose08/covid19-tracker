@@ -6,7 +6,7 @@ const SummaryCountry = ({country}) => {
     return (
 
         <tr>
-            <td>{country.country}</td>
+            <td><img src={country.countryInfo.flag} alt="flag"></img> {country.country}</td>
             <td>{country.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}<br/><span className="negative-extra">{" +" + country.todayCases}</span></td>
             <td>{country.casesPerOneMillion.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>
             <td>{country.critical.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</td>

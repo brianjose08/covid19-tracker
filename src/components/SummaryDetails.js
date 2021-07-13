@@ -6,7 +6,7 @@ import SummaryDetail from "./SummaryDetail";
 const SummaryDetails = ({ data_summary, data_summary_yesterday, data_vaccine}) => {
     return (
         <div id="summary-details">
-            <div className="row" data-aos="fade-down">
+            <div className="row" data-aos="fade-up">
                 <SummaryDetail title="Global cases" total={data_summary.cases} change={data_summary.todayCases} extra_info={data_summary.casesPerOneMillion + " per million"} />
                 <SummaryDetail title="Cases active" total={data_summary.active} change={(data_summary.active - data_summary_yesterday.active)} extra_info={data_summary.critical + " critical conditions"} />
                 <SummaryDetail title="Total recovered" total={data_summary.recovered} change={data_summary.todayRecovered} extra_info={Math.round((data_summary.recovered / data_summary.cases) * 100) + "% recovered"} upside={true}/>

@@ -50,7 +50,7 @@ class Home extends React.Component {
         else {
             return (
                 <div id="home-container">
-                    <div id="header">
+                    <div className="header">
                         <div className="row home-banner">
                             <div className="col-lg-12">
                                 <img data-aos="fade-down" src={covid_image} className="image-header-right" alt="covid" />
