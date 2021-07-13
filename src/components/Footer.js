@@ -14,7 +14,7 @@ class Footer extends React.Component {
                     <h6>
                         <i class="fas fa-envelope"></i> brianjose08@hotmail.com
                     </h6>
-                    <a href="#header">
+                    <a href=".header">
                         <i class="fas fa-chevron-up"></i>
                     </a>
                 </div>
