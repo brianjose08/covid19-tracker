@@ -49,8 +49,19 @@
     margin: 15px 0px;
 }
 
+.summary-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.summary-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
 .summary-information p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .positive-change {
@@ -89,6 +100,10 @@
     box-shadow: 0 0 0.8rem rgb(0 0 0 / 10%);
 }
 
+.table th {
+    border-top: none;
+}
+
 thead {
     font-size: 15px;
     position: sticky;
@@ -109,7 +124,4 @@ tbody img {
 tbody span {
     font-size: 13px;
     font-weight: 600;
-}
-
-.header {
 }

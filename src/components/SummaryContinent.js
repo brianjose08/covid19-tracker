@@ -2,11 +2,11 @@ import React from "react";
 import '../css/summary.css';
 
 
-const SummaryContinent = ({continent , continent_yesterday}) => {
+const SummaryContinent = ({ continent, continent_yesterday }) => {
 
-    if((continent.active - continent_yesterday.active) > 0) {
+    if ((continent.active - continent_yesterday.active) > 0) {
         return (
-        
+
 
 
 
@@ -16,6 +16,8 @@ const SummaryContinent = ({continent , continent_yesterday}) => {
                         <p>
                             {continent.continent}
                         </p>
+                    </div>
+                    <div className="summary-subtitle">
                         <span>
                             Cases
                         </span>
@@ -40,6 +42,8 @@ const SummaryContinent = ({continent , continent_yesterday}) => {
                         <p>
                             {continent.continent}
                         </p>
+                    </div>
+                    <div className="summary-subtitle">
                         <span>
                             Cases
                         </span>
