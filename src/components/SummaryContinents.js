@@ -18,7 +18,7 @@ const SummaryContinents = ({ data_continents, data_continents_yesterday }) => {
 return (
     <div id="summary-continents" data-aos="fade-up">
         <div>
-            <h1><i class="fas fa-circle fa-xs"></i> Continents</h1>
+            <h2 className="sub-title">Continents</h2>
         </div>
         <div className="row">
             {continents}

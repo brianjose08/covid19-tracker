@@ -13,20 +13,20 @@ const SummaryCountries = ({ data_countries }) => {
     return (
         <div data-aos="fade-up">
             <div>
-                <h1><i class="fas fa-circle fa-xs"></i> Countries</h1>
+                <h2 className="sub-title country-title">Countries</h2>
             </div>
             <div className="div-table">
                 <table className="table">
-                    <thead>
+                    <thead >
                         <tr>
-                            <th scope="col">Country</th>
-                            <th scope="col">Cases</th>
-                            <th scope="col">Cases per million</th>
-                            <th scope="col">Critical</th>
-                            <th scope="col">Recovered</th>
-                            <th scope="col">Deaths</th>
-                            <th scope="col">Deaths per million</th>
-                            <th scope="col">Tests</th>
+                            <th className="header" scope="col">Country</th>
+                            <th className="header" scope="col">Cases</th>
+                            <th className="header" scope="col">Cases per million</th>
+                            <th className="header" scope="col">Critical</th>
+                            <th className="header" scope="col">Recovered</th>
+                            <th className="header" scope="col">Deaths</th>
+                            <th className="header" scope="col">Deaths per million</th>
+                            <th className="header" scope="col">Tests</th>
                         </tr>
                     </thead>
                     <tbody>

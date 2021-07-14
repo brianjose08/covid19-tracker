@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/footer.css';
+import ScrollToTopBtn from "./ScrollToTop";
 
 class Footer extends React.Component {
 
@@ -14,9 +15,7 @@ class Footer extends React.Component {
                     <h6>
                         <i class="fas fa-envelope"></i> brianjose08@hotmail.com
                     </h6>
-                    <a href=".header">
-                        <i class="fas fa-chevron-up"></i>
-                    </a>
+                    <ScrollToTopBtn/>
                 </div>
             </footer>
 

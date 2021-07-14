@@ -30,6 +30,7 @@ html {
 .fa-chevron-up:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(233, 0, 78);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
